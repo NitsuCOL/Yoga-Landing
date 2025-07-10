@@ -133,8 +133,104 @@ nav {
         width: 40%;
     }
 }
-
 /*--------- FIN DE LOS ESTILOS DE LA HERO SECTION ---------------*/
+
+/*ESTILOS DEL ABOUT US*/
+#aboutUs{
+    /* background-color: red; */
+    font-family: "Montserrrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: .8rem;
+        text-align: center;
+        width: 30%;
+    }
+
+    .cards__aboutUs{
+        /* background-color: aqua; */
+        width: 70%;
+        padding: 50px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        gap: 50px 20px;
+        
+        .card-info{
+            background-color: #FFF;
+            padding: 30px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+
+            .img-circle{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -25%;
+                overflow: hidden;
+
+                img{
+                    width: 30px;
+                }
+            }
+
+            .one{
+                background-color: #FBDCDA;
+            }
+
+            .two{
+                background-color: #F1E0F3;
+            }
+
+            .three{
+                background-color: #FFF3EB;
+            }
+
+            .four{
+                background-color: #C8DEEB;
+            }
+
+            .five{
+                background-color: #FEE0E0;
+            }
+
+            .six{
+                background-color: #FEECBC;
+            }
+
+            p{
+                width: 100%;
+                color: #2a2a2a;
+            }
+        }
+
+        .shadow-card{
+            border-radius: 5px;
+            box-shadow: 4px 4px 6px #00000005,
+                -4px 4px 6px #00000005,
+                0px 4px 6px #00000005;
+        }
+    }
+}
+/*---------- FIN DE LOS ESTILOS DEL ABOUT US -----------------*/
 
 /*CLASE PARA LAS LETRAS AZULES*/
 .blue_letter {
