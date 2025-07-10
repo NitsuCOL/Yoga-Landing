@@ -1,47 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav{
-    /* background-color: red; */
+/*ESTILOS DE LA BARRA DE NAVEGACION*/
+nav {
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px 0 60px;
+    padding: 10px 60px;
 
-    h1{
-        a{
+    h1 {
+        a {
             text-decoration: none;
             color: #323232;
             font-weight: 500;
         }
     }
 
-    .navList{
-        /* background-color: aqua; */
+    .navList {
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 30px;
 
-        ul{
+        ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 60px;
             list-style: none;
 
-            a{
+            a {
                 font-size: 14px;
                 text-decoration: none;
                 color: #323232;
                 font-weight: 400;
             }
 
-            a:hover{
+            a:hover {
                 color: #718DA9;
                 font-weight: 600;
                 transition: color .1s ease-in,
@@ -49,7 +48,7 @@ nav{
             }
         }
 
-        button{
+        button {
             background-color: #FFF;
             padding: 10px 30px;
             color: #6E91C9;
@@ -58,7 +57,7 @@ nav{
             cursor: pointer;
         }
 
-        button:hover{
+        button:hover {
             background-color: #6E91C9;
             color: #FFF;
             transition: background-color .2s ease-in,
@@ -67,7 +66,72 @@ nav{
     }
 }
 
+/*--------------- FIN DE LOS ESTILOS DE LA BARRA DE NAEVGACION ------------*/
+
+/*ESTILOS DE LA HERO SECTION*/
+#home {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    .info__hero {
+        width: 30%;
+
+        h2 {
+            font-size: 2rem;
+            white-space: pre-line;
+        }
+
+        p {
+            margin-top: 10px;
+            width: 80%;
+            font-size: .8rem;
+        }
+
+        .btn-container__hero {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+
+            button {
+                margin-top: 30px;
+                padding: 10px 30px;
+                border-radius: 0px 20px 20px 20px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                transform: scale(1.05);
+                transition: transform .3s ease;
+            }
+
+            .btn-1 {
+                background-color: #4A77BA;
+                color: #FFF;
+                border: 1px solid #4A77BA;
+            }
+
+            .btn-2 {
+                background-color: #FFF;
+                color: #4A77BA;
+                border: 1.5px solid #4A77BA;
+            }
+        }
+    }
+
+    img {
+        border-radius: 5px;
+        width: 40%;
+    }
+}
+
+/*--------- FIN DE LOS ESTILOS DE LA HERO SECTION ---------------*/
+
 /*CLASE PARA LAS LETRAS AZULES*/
-.blue_letter{
+.blue_letter {
     color: #4A77BA;
 }
