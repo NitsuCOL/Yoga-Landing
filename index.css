@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav{
+    background-color: red;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 0 40px;
+
+    h1{
+        a{
+            text-decoration: none;
+            color: #323232;
+            font-weight: 500;
+        }
+    }
+
+    .navList{
+        background-color: aqua;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*CLASE PARA LAS LETRAS AZULES*/
+.blue_letter{
+    color: #4A77BA;
+}
