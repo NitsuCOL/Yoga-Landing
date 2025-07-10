@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#root{
+    min-height: 100dvh;
+}
+
 /*ESTILOS DE LA BARRA DE NAVEGACION*/
 nav {
     font-family: "Montserrat", sans-serif;
@@ -70,15 +74,16 @@ nav {
 
 /*ESTILOS DE LA HERO SECTION*/
 #home {
+    height: 90dvh;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
 
     .info__hero {
         width: 30%;
+        margin-top: -50px;
 
         h2 {
             font-size: 2rem;
