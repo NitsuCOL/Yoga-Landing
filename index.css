@@ -5,12 +5,12 @@
 }
 
 nav{
-    background-color: red;
+    /* background-color: red; */
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px 0 40px;
+    padding: 10px 60px 0 60px;
 
     h1{
         a{
@@ -21,7 +21,7 @@ nav{
     }
 
     .navList{
-        background-color: aqua;
+        /* background-color: aqua; */
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -35,8 +35,34 @@ nav{
             list-style: none;
 
             a{
+                font-size: 14px;
                 text-decoration: none;
+                color: #323232;
+                font-weight: 400;
             }
+
+            a:hover{
+                color: #718DA9;
+                font-weight: 600;
+                transition: color .1s ease-in,
+                    font-weight .1s ease-in;
+            }
+        }
+
+        button{
+            background-color: #FFF;
+            padding: 10px 30px;
+            color: #6E91C9;
+            border: 1px solid #6E91C9;
+            border-radius: 0px 20px 20px 20px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #6E91C9;
+            color: #FFF;
+            transition: background-color .2s ease-in,
+                color .2s ease-in;
         }
     }
 }
