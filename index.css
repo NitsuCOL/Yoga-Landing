@@ -266,6 +266,7 @@ nav {
 
         .ctn-course{
             background-color: #FAFAFA;
+            padding-bottom: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -285,12 +286,42 @@ nav {
                     width: 25px;
                     border: 1px solid #000000;
                     padding: 5px;
+                    cursor: pointer;
                 }
             }
         }
 
         .ctn-course > img {
             width: 100%;
+        }
+    }
+
+    .arrows-ctn__course{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        button{
+            padding: 3px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+
+            img{
+                width: 20px;
+            }
+        }
+
+        button:nth-child(1){
+            background-color: #E8EAE9;
+        }
+        
+        button:nth-child(2){
+            background-color: #889494;
         }
     }
 }
