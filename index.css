@@ -137,7 +137,6 @@ nav {
 
 /*ESTILOS DEL ABOUT US*/
 #aboutUs{
-    /* background-color: red; */
     font-family: "Montserrrat", sans-serif;
     display: flex;
     flex-direction: column;
@@ -231,6 +230,71 @@ nav {
     }
 }
 /*---------- FIN DE LOS ESTILOS DEL ABOUT US -----------------*/
+
+/*INICIO DE LA SECTION COURSE*/
+#course{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+
+    > p{
+        width: 30%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .cards__courses{
+        width: 70%;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 20px;
+
+        .ctn-course{
+            background-color: #FAFAFA;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .ctn-social{
+                margin-top: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    width: 25px;
+                    border: 1px solid #000000;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .ctn-course > img {
+            width: 100%;
+        }
+    }
+}
+/*------- FIN DE LA SECTION COURSE ---------------*/
 
 /*CLASE PARA LAS LETRAS AZULES*/
 .blue_letter {
